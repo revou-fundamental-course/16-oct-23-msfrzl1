@@ -1,0 +1,105 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 2em;
+  border-bottom: 1px solid black;
+}
+
+.nav-logo img {
+  max-height: 40px;
+}
+
+.nav {
+  display: flex;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out 0;
+}
+
+.nav :hover {
+  color: rgb(255, 94, 0);
+  transition-delay: 0.2s;
+}
+
+.nav-item {
+  padding: 2px 1em;
+  border: 0.5px solid black;
+  min-width: 60px;
+  text-align: center;
+}
+
+.greeting {
+  margin-top: 2em;
+  margin-left: 5em;
+}
+
+.banner {
+  display: flex;
+  border-bottom: 1px solid black;
+  background-image: url(../assets/gng.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.headquartes {
+  padding: 5em;
+  border-bottom: 1px solid black;
+}
+
+.h1-item {
+  padding: 2em;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cirle {
+  height: 120px;
+  width: 120px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.circle-kota {
+    padding-top: 110px;
+}
+
+.nama-kota {
+  display: flex;
+  font-size: 18px;
+}
+
+.location {
+  display: flex;
+}
+
+table td {
+  padding: 2px 5px;
+}
+
+.input {
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  padding: 50px;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+}
+
+.form-right {
+  border: 1px solid black;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-right: 150px;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: small;
+}
