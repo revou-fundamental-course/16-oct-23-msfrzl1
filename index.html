@@ -1,98 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Latihan Website RevoU</title>
-    <link rel="stylesheet" href="css/style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
     <link rel="icon" href="assets/revo.jpg">
-  </head>
-  <body>
+
+    <title>Tugas website RevoU</title>
+</head>
+<body>
     <header class="header">
-      <div class="nav-logo">
-        <img src="./assets/revo.jpg" alt="" />
-      </div>
-      <div class="nav">
-        <nav class="nav-item"><b>Home</b></nav>
-        <nav class="nav-item"><b>Our Profil</b></nav>
-        <nav class="nav-item"><b>Portofolio</b></nav>
-        <nav class="nav-item"><b>Contact Us</b></nav>
-      </div>
+        <div class="nav-logo">
+            <img src="./assets/revo.jpg" alt="Logo">
+        </div>
+        <div class="nav">
+            <div class="nav-item">Home</div>
+            <div class="nav-item">Our Profile</div>
+            <div class="nav-item">Portofolio</div>
+            <div class="nav-item">Message Us</div>
+        </div>
     </header>
     <section class="banner">
-      <div class="greeting">
-        <h1>Hay , My name is Muhammad Saifur Rizal</h1>
-        <p>Ini adalah latihan website pertama</p>
-      </div>
+        <div class="greetings">
+            <h2>Hi, My name is Muhammad Saifur Rizal</h2>
+            <p>ini adalah latihan website pertamaku . </p>
+        </div>
     </section>
-    <section class="headquartes">
-      <h1>Our Headquarter</h1>
-      <div class="h1-item">
-        <div class="cirle"><h3 class="circle-kota">Jakarta</h3></div>
-        <div class="cirle"><h3 class="circle-kota">Bandung</h3></div>
-        <div class="cirle"><h3 class="circle-kota">Bekasi</h3></div>
-      </div>
+    <div class="img">
+        <img class="img-slide" src="assets/gng-sumbing.jpg">
+        <img class="img-slide" src="assets/gng-semeru.jpg">
+        <img class="img-slide" src="assets/gng-sumbing.jpg">
+        <img class="img-slide" src="assets/gng.jpg">
+        </div>
+    <section class="headquarters">
+        <h1>Our headquarters</h1>
+        <div class="hq-item">
+        <div class="circle"> <p><b>Jakarta</b></p></div>
+        <div class="circle"> <p><b>Bandung</b></p></div>
+        <div class="circle"> <p><b>Kalimantan</b></p></div>
+        </div>
     </section>
     <section class="form">
-      <div class="form-left">
-        <h1><b>Message Us</b></h1>
-        <form action="">
-          <table>
-            <tr>
-              <td>Nama</td>
-              <td>:</td>
-              <td><input class="input"id="text" placeholder="Nama" /></td>
-            </tr>
-            <tr>
-              <td>Tanggal Lahir</td>
-              <td>:</td>
-              <td>
-                <input type="date" id="birthday" name="birthday" />
-              </td>
-            </tr>
-            <tr>
-              <td>Jenis Kelamin</td>
-              <td>:</td>
-              <td>
-                <input
-                  type="radio"
-                  name="jenis-kelamin"
-                  checked="checked"
-                  value="Laki-laki"
-                />Laki-laki
-                <input
-                  type="radio"
-                  name="jenis-kelamin"
-                  value="Perempuan"
-                />Perempuan
-              </td>
-            </tr>
-            <tr>
-              <td>Pesan</td>
-              <td>:</td>
-              <td><input class="input" type="text" placeholder="Pesan" /></td>
-            </tr>
-            <tr>
-              <td colspan="3">
-                <input class="input" type="submit" name="submit" id="" />
-              </td>
-            </tr>
-          </table>
-        </form>
-      </div>
-      <div class="form-right">
-        <p><b>Current time</b></p>
-            <b>Nama :</b> Muhammad Saifur Rizal <br>
-            <b>Tanggal Lahir </b>: 11/01/1999 <br>
-            <b>Jenis Keliamin </b>: Laki-laki <br>
-            <b>Pesan </b>: belajar membuat website</p>
-      </div>
+
+        <div class="form-left">
+            <h1><b>Message Us</b></h1>
+            <form name="message-form" onsubmit="return validateForm()">
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input class="input" ="text" placeholder="Nama" name="full-name"></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td><input class="input" type="date" name="birth-date"></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td><input type="radio" id="male" name="gender" checked="checked" value="male">
+                            <label for="male">Laki-laki</label> 
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >Pesan</td>
+                        <td >:</td>
+                        <td ><textarea class="input" name="messages" placeholder="Pesan" cols="30" rows="5"></textarea> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="submit" style="cursor: pointer;" class="input" id="submit" value="Submit" ></input></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="form-right">
+            <p><b>Current time</b> <span id="time"></span></p>
+            <b>Nama </b> : <span id="sender-full-name"></span> <br>
+            <b>Tanggal Lahir </b>: <span id="sender-birth-date"></span> <br>
+            <b>Jenis Keliamin </b>: <span id="sender-gender"></span> <br>
+            <b>Pesan </b>: <span id="sender-messages"></span></p>
+        </div>
     </section>
-
-    <footer class="footer-text">
-      <p>made by msr</p>
+    <footer class="footer">
+            <p class="footer ">made by Muhammad Saifur Rizal</p>
     </footer>
-
     <script src="js/script.js"></script>
-  </body>
+</body>
 </html>
